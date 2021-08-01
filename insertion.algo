@@ -1,0 +1,17 @@
+FUNCTION insertion (arr : ARRAY_OF INTEGER[n]) : INTEGER
+VAR
+    i,j,temp : INTEGER
+    leng : INTEGER := tab.length
+BEGIN
+    FOR i FROM 1 TO leng STEP 1  DO
+        temp := arr[i]
+        j = i - 1
+        WHILE (j >= 0 && arr[j] > x) DO
+            arr[j+1] = arr[j]
+            j = j - 1
+        END_WHILE
+        arr [j+1] = x
+        i = i + 1
+    END_FOR
+    RETURN arr ;
+END
